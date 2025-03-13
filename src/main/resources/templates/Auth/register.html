@@ -1,10 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="register.css">
 </head>
 <body>
-$END$
+
+
+<form class="form">
+    <p class="title">Registro </p>
+    <p class="message">Registrate ahora y obten acceso a la app. </p>
+    <div class="flex">
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Nombre</span>
+        </label>
+
+        <label>
+            <input class="input" type="text" placeholder="" required="">
+            <span>Apellido</span>
+        </label>
+    </div>
+
+    <label>
+        <input class="input" type="email" placeholder="" required="">
+        <span>Email</span>
+    </label>
+
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Contraseña</span>
+    </label>
+    <label>
+        <input class="input" type="password" placeholder="" required="">
+        <span>Confirmar contraseña</span>
+    </label>
+    <button class="submit">Enviar</button>
+    <p class="signin">Ya tienes una cuenta? <a class="nav-link" th:href="@{/login}">Sign in</a> </p>
+</form>
+
 </body>
 </html>

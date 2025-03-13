@@ -1,4 +1,7 @@
 package com.modulo.tallerPracticoModulo.Repository;
 
-public class AlumnosRepository {
+import com.modulo.tallerPracticoModulo.Entidad.Alumnos;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AlumnosRepository extends JpaRepository<Alumnos, Long> {
 }

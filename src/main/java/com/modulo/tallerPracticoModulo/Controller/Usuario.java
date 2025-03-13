@@ -11,9 +11,5 @@ public class Usuario {
         return "index";
     }
 
-    @GetMapping("/informacion")
-    public String informacion() {
-        return "pages/vistaInformativa";
-    }
 
 }

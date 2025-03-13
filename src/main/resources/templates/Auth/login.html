@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://wwww.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
@@ -31,7 +31,8 @@
         <span class="span">Forgot password?</span>
     </div>
     <button class="button-submit">Sign In</button>
-    <p class="p">Don't have an account? <span class="span">Sign Up</span>
-    </div>
+    <p class="p">No tienes cuenta? <a class="nav-link" th:href="@{/register}"> Registrate </a>
+    </form>
+</div>
 </body>
 </html>
